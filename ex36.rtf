@@ -1,0 +1,71 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9060\viewh14360\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 RULES FOR IF STATEMENTS\
+\
+An if statement must have an else\
+if the else should never run because it doesn\'92t make sense, you must use a die function [dead(why)] in the else that prints out an error message and dies [exit(0)] for example. This will find many errors!\
+Never nest if statements more than two deep. Always try to do them one deep.\
+Treat if statements like paragraphs, where each if-elif-else grouping is like a set of sentences. put blank lines before and after them. \
+Your booleans tests should be simple. If they are complex, move their calculations to variables earlier in your function and use a good name for the variable.\
+\
+RULES FOR LOOPS\
+Use a while-loop only to lop forever; and that means, probably never! this only applies to python, other languages are different\
+use a for-loop for all other kinds of looping. especially if there is a fixed or limited number of things to loop over.\
+\
+TIPS FOR DEBUGGING\
+do not use a debugger - equivalent of a body scan on a sick person. not useful and specific.\
+the best way to debug a program is to use print to print out the values of the variables at points in the program to see where they go wrong.\
+Make sure parts of your programs work as you work on them. Do not write massive files of code before you try to run them. \
+\
+\
+\
+GAME DESIGN\
+\
+Adventure game\
+\
+Get to Heaven\
+Getting to Heaven involves several levels\
+You progress through each level and have to win each level to go on to the next level\
+The game levels are: San Francisco, Los Angeles and Brooklyn\
+The game play consists of transportation to a location and a task to be performed\
+You accrue points? You have to have > n points to proceed?\
+To start the game, you get on a plane and go for a ride. You go to SF, LA and Brooklyn.\
+If you win Brooklyn you win the game.\
+At the beginning of the game, \
+	You start with a budget of 200\
+If you choose the right choice you get to progress\
+If you run out of money you lose\
+San Francisco\
+	Your job is to deliver a package to the lady in the wedding dress\
+	You land at SFO and have to decide how to get to downtown\
+	If you choose taxi or uber or lyft it costs you a lot of money but you make it to the next step\
+	If you choose bart you make it to the next step\
+	If you do anything else you die\
+	Once downtown, you have to decided whether to go to the Embarcadero or to the Ferry building\
+	You have to look around for the lady.\
+	The lady is at the Ferry Building\
+	Once you find the lady you go to the next city\
+Los Angeles\
+	You are on your way to LA. You mission is find the stars and the sun.\
+	You get off a plane in LAX\
+	You have to rent a car or be picked up by a friend\
+	If you try for a taxi or uber you pay a lot\
+	If you try metro you die\
+	You have to choose where to go. The only choices are beach, Hollywood, and Griffith Park\
+	The start and the sun are at Griffith Park Observatory.\
+	The beach and Hollywood don\'92t have much for you\
+	You have to get back in your car and choose another destination\
+	Once you find the stars and sun you win.\
+	\
+Brooklyn\
+	You get on a plane and land at La Guardia\
+	Your mission is to find the germans in williamsburg\
+	You have to catch a cab to get there\
+	If you do the subway you are ok\
+	If you call uber you die\
+	Once in williamsburg, your choices are to go to the park or the water or downtown\
+	The germans are at Radegast downtown}

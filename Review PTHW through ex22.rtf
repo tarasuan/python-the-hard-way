@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww6400\viewh14560\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs28 \cf0 Terminal\
+Python\
+quit()\
+enter\
+ls - list directory\
+cd - change dir\
+mkdir - make directory\
+print - prints output\
+python <filename.py> - runs the file\
+# - comment out\
+str - string  - format string. how you make something that your program might give to a human. \'93\'94 or \'91\'92. \'91\'92\'92 or \'93\'94\'94 make multiple string lines\
++\
+-\
+/ - drops the fractional part\
+*\
+% - modulus\
+<\
+>\
+<=\
+>=\
+floating point - a number with a decimal point. 10.5\
+_ underscore\
+i x j - popular variable names\
+= assigns value\
+== tests if two things have the same value\
+% specialized format sequences and then putting the variables at the end with a special syntax that tells python, \'93hey this is a format string, put these variables in there\'94\
+%r - debugging print this no matter what\
+%s %r %d are formatters, tells python take the variable on the right and put it in place of the %s with its value\
+# you can hash at the end of a statement and it will work\
+% use it at the end of a format string to sub variables\
+%s and %s you need parens and comma separate\
+, at the end of a print line tells computer to keep going on 1 line, else it adds a break.\
+You can multiply a string by a integer and it makes n strings!\
+You can % a \'91string\'92 just as you would a variable but the var doesn\'92t have quotes\
+format string variables can be values, strings, variables, the formatter itself, multiples, True and False are \'93keywords\'94\
+\\n is a new line character\
+\\ is an escape\
+Need to escape \'93 or \'91 in certain cases, \'93I am 6\'922\\\'94 tall\'94\
+\\t tab\
+\\n new line (no space between it and next char)\
+\\\\ backslash itself\
+\\\'92\
+\\\'94\
+\\a (ascii bell)\
+raw_input() is how you get user input from the terminal\
+use a , at the end of a print line to prevent the line from ending with a newline character and going to the next line\
+x = int(raw_input()) get a number from user input\
+prompt like raw_input(\'93Name? \'93)\
+pydoc open, sys, os, file etc to read what it does\
+import how you add features to your scrip from the Python feature set\
+argv = argument variable, it holds the args you pass to your script when you run it\
+unpack argv, instead of holding the args, it gets assigned to variables\
+features = modules also called libraries\
+you can\'92t combine argv and raw_input literally but use in same script\
+convert string to integer int()\
+prompt = \'91> \'91 makes a user prompt! \'91:-) \'91 works too, see?\
+you can combine the ideas in ex14\
+open takes a parameter, returns a value you can set to your own variable.\
+text = open(filename) opens a file\
+text.read() reads the open file from the variable text\
+nothing in the () says just do it without parameters as opposed to (1) which might be to start at line 1\'85 which would need to be defined.\
+open(filename, \'91w\'92) \'97> explicit write.\
+default is \'91r\'92 read\
+target = open\'85\
+target.truncate() <\'97 blows it away\
+target.write(line1) where line1 = raw_input(\'93line 1: \'93)\
+target.close() - important!\
+you can use argv to get a file and do things with it, like open, read, copy from one to another\
+exists is a command returns True\
+echo \'93This is a test file,\'94 > test.txt on the command line makes that file with that text\
+cat file reads the file\
+len() gets the length of the string you passed it returns it as a number\
+chain together command like open(file).read() \
+in that case you don\'92t need to close it\'85\
+Function - name pieces of code the way variables name strings and numbers\
+Function take argument the way scripts take argv\
+Make mini scripts or tiny command\
+def is how you create a function in Python\
+def blah_underscore(argument(s),argument_unique(s)):\
+	indent four not more not less\
+dedent\
+run a function use or call\
+type its name to run it\
+blah(value, value1)\
+\
+variables in your function are not connected to vars in your script - global vs local\
+\
+a function can take values as numbers, variables or combo\
+\
+you can use = to make a variable or name something, you can pass it to a function as an argument\
+\
+you can call a function in a function\
+\
+*** discuss ex20 with someone ***\
+\
+\
+\
+\
+}

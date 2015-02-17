@@ -1,0 +1,152 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww15400\viewh14360\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs28 \cf0 Keyword	Description				Example\
+and		logical and				true and false == false\
+as		part of the with-			with X as Y: pass\
+		as statement		\
+assert	assert that some-		assert False, \'93Error!\'94\
+		thing is true\
+break		Stop this loop 			while True: break\
+		right now\
+class		define a class			class Person(object)\
+continue	Don\'92t process 			while True: continue\
+		more of the loop,\
+		do it again	\
+def		Define a function			def X(Y): pass\
+del		Delete from dictionary		del X[Y]\
+elif		Else if condition			if: X; elif: Y; else: J\
+else		Else condition			if: X; elif: Y; else: J\
+except	If an exception happens,	except ValueError, e: print e\
+		do this.\
+exec		Run a string as Python		exec \'91print \'93Hello\'94\'92\
+finally		Exceptions or not, finally	finally: pass\
+		do this no matter what\
+for		Loop over a collection of	for X in Y: pass\
+		things\
+from		Importing specific parts of	import X from Y\
+		a module\
+global	Declare global variable		global X\
+if		if condition 				if: X; elif: Y; else: J\
+import	Import a module to use		import os\
+in		Part of for-loops. Also a	for X in Y: pass also 1 in [1] == True\
+		test of X in Y\
+is		Like == to test equality		1 is 1 == True\
+lambda	Create a short, anonymous	s = lambda y: y ** y; s(3)\
+		function	\
+not		Logical not				not True == False\
+or		Logical or				True or False = True\
+pass		This block is empty		def empty(): pass\
+print		Print this string			print \'93this string\'94\
+raise		Raise an exception when	raise ValueError(\'93No\'94)\
+		things go wrong	\
+return	Exit a function with a return	def (X): return Y\
+		value\
+try		Try this block, and if 		try: pass\
+		exception go to except	\
+while		While loop				while X: pass\
+with		With an expression as a	with X as Y: pass\
+		variable do\
+yield		Pause here and return to	def X(): yield Y; X().next()\
+		caller	\
+\
+DATA TYPES\
+\
+TYPE	DESCRIPTION		EXAMPLE\
+True		True boolean value	True or False == True\
+False		False boolean value	True and False == False\
+None		Represent \'93nothing	x = None\
+		or \'93no value\'94\
+strings	Stores textual info	x = \'93hello\'94\
+numbers	Stores integers		i = 100\
+floats		Stores decimals		i = 10.389\
+lists		Stores a list of things	j = [1, 2, 3, 4]\
+dicts		Stores a key=value	e = \{\'93x\'94: 1, \'93y\'94: 2\} \
+		mapping of things.\
+\
+STRING ESCAPE SEQUENCES\
+\
+ESCAPE	DESCRIPTION\
+\\\\ 		backslash\
+\\\'92		Single-quote\
+\\\'94		Double-quote\
+\\a		Bell\
+\\b		backspace\
+\\f		formfeed\
+\\n		Newline\
+\\r		Carriage\
+\\t		Tab\
+\\v		Vertical tab\
+\
+STRING FORMATS\
+\
+ESCAPE	DESCRIPTION			EXAMPLE\
+%d		Decimal integers			\'93%d\'94 % 45 == \'9245\'92\
+%i		Same as %d			\'93%i\'94 % 45 == \'9245\'92\
+%o		Octal number			\'93%0\'94 % 1000 == \'911750\'92\
+%u		Unsigned decimal		\'93%u\'94 % -1000 == \'91-1000\'92\
+%x 		Hexadecimal lowercase	\'93%x\'94 % 1000 == \'913e8\'92\
+%e 		Exponential notation		%e\'94 % 1000 == \'911.000000e+03\'92\
+		lowercase \'91e\'92\
+%E		Exponential notation		\'93%E\'94 % 1000 == \'911.000000E+03\'92\
+		uppercase \'91E\'92\
+%f		Floating point real num		\'93%f\'94 % 10.34 == \'9210.340000\'92\
+%F		Sam as %f				\'93%f\'94 % 10.34 == \'9210.340000\'92\
+%g		Either %f or %e, whichever 	\'93%g\'94 % 10.34 == \'9210.340000\'92\
+		is shorter\
+%G		Same as %g but uppercase	\'93%G\'94 % 10.34 == \'9210.30000\'92\
+%c		Character format			\'91%c\'92 % 34 == \'91 \'93 \'91\
+%r		Repr format (debugging)	\'94%r\'92 % int == \'93<type \'91int\'92>\'94\
+%s		String format			\'93%s there\'94 % \'91hi\'92 == \'91hi there\'92\
+%%		Percent sign			\'93%g%%\'94 % 10.34 == \'9210.34%\'92\
+\
+OPERATORS\
+\
+OPERATOR	DESCRIPTION		EXAMPLE\
++			Addition			2 + 4 == 6\
+-			Subtraction			2 - 4 == -2\
+* 			Multiplication		2 * 4 == 8\
+** 			Power of			2 ** 4 == 16\
+/			Division			2 / 4.0 == 0.5\
+//			Floor division		2 // 4.0 == 0.0\
+%			String interpolate or	2 % 4 == 2\
+			modulus\
+<			Less than			4 < 4 == False\
+>			Greater than		4 > 4 == False\
+<=			Less than equal		4 <= 4 == True\
+>=			Greater than equal	4 >= 4 == True\
+==			Equal				4 == 5 == False\
+!=			Not Equal			4 != 5 == True\
+<>			Not Equal			4 <> 5 == True\
+( )			Parenthesis		len( \'91hi\'92 ) == 2\
+[ ]			List brackets		[1, 2, 3, 4]\
+\{ \}			Dict curly braces		\{1, 2, 3, 4\}\
+@			@decorators		@classmethod\
+,			Comma			range(0, 10)\
+: 			Colon			def X():\
+.			Dot				self.x = 10\
+= 			Assign equal		x = 10\
+; 			semi-colon			print \'93hi\'94; print \'93there\'94\
++=			Add and assign		x = 1; x += 2\
+-=			Subtract and assign	x = 1; x -= 2\
+*=			Multiply and assign	x = 1; x *= 2\
+/=			Divide and assign	x = 1; x /= 2\
+//=			Floor divide and assign	x = 1; x //= 2\
+%=			Modulus assign		x = 1; x %= 2\
+**=			Power assign		x = 1; x **= 2\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

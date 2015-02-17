@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13120\viewh13620\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs28 \cf0 Chevy Chase Vegas Vacation Game Emporium\
+Simple games of chance in various rooms\
+\
+you can leave a room and go to the next room through a command\
+you can\'92t pick the next room, it\'92s always the same, but you can just do next next etc\
+\
+you can\'92t cash out until you win in each room\
+\
+the coins improve your score? you \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 GAME ENGINE\
+	Takes a MAP variable \
+	Has a Play module\
+	Sets Global variables of User\'92s Name\
+	Introduces the Game\
+	Asks for the User\'92s name\
+	Sets the coin purse at 0, increments\
+	Can you lose coins for losing?\
+	If coin purse = x then you are ready to CashOut?\
+	\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 ROOMS\
+	Enter\
+	you can exit a room at any time through an exit command that returns the room designated\
+War\
+	Explain game\
+	When ready, user inputs something like \'93war!\'94\
+	Best of 5, first to 3 wins\
+	Cards randomly selected for user and dealer\
+	User gets a card, then dealer gets a card and a winner is determined\
+	If dealer wins, dealer\'92s tally +1\
+	If user wins, user\'92s tally+1\
+	If d = 3, you lose\
+	If u = 3, you win\
+	else play again\
+	If you win, you get x coins\
+	If you lose, you get none or lose coins\
+	You are given status on your coins\
+	return rock_paper_scissors\
+Rock Paper Scissors\
+	Explain game\
+	You are given status of your coins\
+	When ready, user inputs rock, paper or scissors\
+	Dealer\'92s hand is randomly selected\
+	Return dealers hand, then user\'92s hand\
+	Figure out who won\
+	Credit user with won or lost coins\
+	return pick_a_number\
+Pick a number\
+	Explain game\
+	Status of coins\
+	return flip_a_coin\
+Flip a coin\
+	return cash_out\
+Cash Out\
+	Exchange coins for money?\
+	return winner\
+Loser\
+	Die\
+	Print you lost all your money and your family leaves you\
+\
+Coins\
+	When you get all 3 coins you can move on\
+\
+Next room\
+	User input?\
+\
+Some funny quotes\
+	Movie quotes from Vegas Vacation\
+\
+Take the person\'92s name\
+	Use it.\
+\
+\
+MAP\
+	Given a variable\
+	Sets current room\
+	Get next room from a hash table given a next room variable\
+	Sets current room to next room\
+}
